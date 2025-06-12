@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SONIK SHOP</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>SONIK SHOP</h1>
+
+    <div id="balance" class="balance"></div>
+
+    <div class="auth-buttons">
+      <button id="login-btn" onclick="login()">เข้าสู่ระบบ</button>
+      <button id="logout-btn" onclick="logout()">ออกจากระบบ</button>
+    </div>
+
+    <div class="product">
+      <h2>ตั้งค่า Android (50฿)</h2>
+      <button onclick="purchase(50, 'downloads/ตั้งค่าandroid.zip')">ซื้อ & ดาวน์โหลด</button>
+    </div>
+
+    <div class="product">
+      <h2>ตั้งค่า iOS (50฿)</h2>
+      <button onclick="purchase(50, 'downloads/ตั้งค่าIOS.zip')">ซื้อ & ดาวน์โหลด</button>
+    </div>
+
+    <div class="product">
+      <h2>ตั้งค่าคอม (100฿)</h2>
+      <button onclick="copyToClipboard('https://drive.google.com/your-pc-link')">คัดลอกลิงก์ดาวน์โหลด</button>
+    </div>
+
+    <div class="product">
+      <h2>ตั้งค่าคอม HP1 (70฿)</h2>
+      <button onclick="copyToClipboard('https://drive.google.com/your-pc-hp1-link')">คัดลอกลิงก์ดาวน์โหลด</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
